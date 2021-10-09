@@ -24,6 +24,12 @@ public class ComputingPower {
 
     static long iterativePower(long a, long n, long M){
         long res = 1;
+        a = a % M;
+
+        if(a==0){
+            return 0;
+        }
+        
         while(n>0){
             if((n&1)==1)
                 res = (res * a)%M;
