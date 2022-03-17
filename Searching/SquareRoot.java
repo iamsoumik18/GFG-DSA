@@ -24,7 +24,7 @@ public class SquareRoot {
     static long floorSqrt(long n){
         long l = 1, r = n, ans = 0;
         while(l<=r){
-            long m = (l+r)/2;
+            long m = l+(r-l)/2;
             if(m*m==n){
                 return m;
             }else if(m*m>n){
