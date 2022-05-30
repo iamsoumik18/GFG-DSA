@@ -18,6 +18,7 @@ public class StringPermutation {
         for(int j=i; j<s.length(); j++){
             s = swap(s, i, j);
             helper(s, i+1);
+            s = swap(s, i, j);
         }
     }
 
